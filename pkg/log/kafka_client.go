@@ -2,9 +2,17 @@ package log
 
 import (
 	"fmt"
+	"github.com/Shopify/sarama"
 )
 
+func NewKafakLoger() *KafakLoger {
+	log := KafakLoger{}
+	return &log
+}
+
 type KafakLoger struct {
+	DataCollector     sarama.SyncProducer
+	AccessLogProducer sarama.AsyncProducer
 }
 
 func (l *KafakLoger) Debugf(format string, args ...interface{}) {

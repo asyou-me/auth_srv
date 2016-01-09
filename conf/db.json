@@ -1,5 +1,6 @@
 {
 	"package": "models",
+	"decorat": "TypeDecorat",
 	"tables": [{
 		"name": "user",
 		"struct_name": "User",

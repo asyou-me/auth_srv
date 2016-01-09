@@ -13,7 +13,8 @@ func Init(db, logser pulic_type.MicroSerType) {
 	//初始化数据库
 	sqlurl := db.Addr
 	loger := log.KafakLoger{}
-	DB = NewDB()
+	DB = db_driver.NewDB()
+	TypeDecorat(DB)
 	err := DB.Open(sqlurl, &loger)
 	if err != nil {
 		fmt.Println("初始化postgresql数据库失败")
