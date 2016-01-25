@@ -3,7 +3,7 @@
 * auth是一个基于oauth2的用户授权模块,定义了纯粹api形式的接口
 
 
-##需要实现的功能
+##TODO
 * 用户远程授权登陆
 * 用户操作日志
 * 用户创建自己授权的应用
@@ -13,7 +13,7 @@
 * 用户任务模块
 * 用户邮件模块
 
-##使用方法
+##Install
 * 获取依赖  go get github.com/asyoume/postgresql  <br/> go get github.com/asyoume/inotify 
 * 安装依赖  go install github.com/asyoume/postgresql/pgsql_map
 * 获取源码  go get github.com/asyoume/Auth_ser

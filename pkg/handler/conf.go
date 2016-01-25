@@ -3,7 +3,7 @@ package handler
 import (
 	"encoding/json"
 	"errors"
-	"github.com/asyoume/Auth_ser/pkg/pulic_type"
+	"github.com/asyoume/lib/pulic_type"
 	"io/ioutil"
 	"os"
 )

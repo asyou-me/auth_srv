@@ -36,6 +36,7 @@ func main() {
 	// Routes
 	e.Post("/Login", UserLogin)
 	e.Post("/Register", UserRegister)
+	e.Get("/Log", Log)
 	e.Run(":9091")
 }
 

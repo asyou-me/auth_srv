@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/asyoume/Auth_ser/pkg/handler"
 	"github.com/labstack/echo"
 	"net/http"
@@ -25,4 +26,10 @@ func UserLogin(c *echo.Context) error {
 	} else {
 		return c.String(http.StatusInternalServerError, err.Error())
 	}
+}
+
+func Log(c *echo.Context) error {
+	fmt.Println(c.Query("c"))
+
+	return c.String(http.StatusOK, "")
 }
