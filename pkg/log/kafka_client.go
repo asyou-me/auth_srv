@@ -39,7 +39,6 @@ func (l *KafakLoger) Fatalf(format string, args ...interface{}) {
 func (l *KafakLoger) Panicf(format string, args ...interface{}) {
 
 }
-
 func (l *KafakLoger) Debug(args ...interface{}) {
 	fmt.Println(args)
 }
